@@ -1,0 +1,32 @@
+/******************************************************************************
+
+This is a program written by Me for his good buddy.
+This code is open source and created for the sole purpose of education.
+
+This program takes user input for how many numbers to enter.
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n; // user input for how many numbers
+    int i; // variable for the for loop
+    int x; // user input of 10, 9, -5
+    cout << "Please enter a number between -10 and 10: ";
+    cin >> n; // user input for how many time to run for loop
+    if (n > -10 and n < 10){ // if user input is great than -10 and less than 10 then run the for loop
+    for (i = 0; i < n; i++){ // m set to 0 and is less than 'i' user input then from for loop until i = n,i++ adds 1 to m each loop 
+                            // (ie. first is 1, second 2, third is 3 and then it ends the for loop)
+        cin >> x; // user input for the number to determine if odd or even
+        if (x > 1 and x < 20 and x%2==0){ // start if statement; use "and" to set for more than one condition in if statemnt
+            cout << x << " is even. \n";
+        }else{
+        cout << x << " is odd. \n";
+        }
+    }
+    cout << "Thank you and try this out again.";
+    return 0; // add this so for loop to work (ie, in future you can change 0)
+    }cout << "Your number is out of range."; // if user input n is out of range print this
+}
