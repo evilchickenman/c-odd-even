@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+// Declare global variables: i, row, input
+    int i;
+    int row;
+    int input;
+// Start of algorithm
+    cout << "How many integers: ";
+    cin >> row;
+// Check to see is row meets conditions
+    if(0 > row < 20){
+// Start of for loop to run "int row" number of times
+        for(i = 0; i < row; i++){
+// Sets i=0; and while "i<row"; i++ means add 1 to i at the end of each loop
+            cout << "Enter Number: ";
+            cin >> input;
+          if((-10 > input < 10) & (input%2==0)){
+              
+              cout << "     " << input << " is even. \n";
+          }else{
+          cout << "     " << input << " is odd. \n";
+          }
+        }
+    }return 0;
+}
